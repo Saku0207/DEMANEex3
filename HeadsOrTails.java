@@ -1,7 +1,13 @@
-import  java.util.Random;
+import java.util.Random;
+import java.util.Scanner;
 
 public class HeadsOrTails{
     public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.err.println("Who are you?");
+        String userName = scn.nextLine();
+        System.err.println("Hello, " +userName + "!");
+
         System.err.println("Tossing a coin...");
 
         Random random = new Random();
